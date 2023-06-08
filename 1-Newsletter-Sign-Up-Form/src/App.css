@@ -193,7 +193,7 @@ b {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 
   .img-desktop {
@@ -203,7 +203,7 @@ b {
   .section-two {
     height: auto;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     background-image: url("../public/illustration-sign-up-mobile.svg");
     background-size: cover;
   }
@@ -219,6 +219,61 @@ b {
   .img-mob {
     display: block;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 780px) {
+  .main {
+    height: 100vh;
+    background-color: #2a2a3a;
+    padding: 2em 0 0 0;
+    font-size: 1.15em;
+  }
+
+  .container {
+    padding: 1em;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0.85em;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .section-two {
+    height: auto;
+    width: 100%;
+    /* background-color: blue; */
+    background-image: url("../public/illustration-sign-up-mobile.svg");
+    background-size: cover;
+  }
+
+  .main-success {
+    height: fit-content;
+    width: 60%;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-mob {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    font-size: 1.1em;
+    width: 80%;
+  }
+
+  .main-success {
+    width: 50%;
+    font-size: 1.1em;
   }
 }
 
