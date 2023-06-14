@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #fafafa;
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+}
+
+dialog {
+  height: fit-content;
+  width: 40%;
+  margin: auto;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+}
+
+dialog::backdrop {
+  background-color: rgba(51, 51, 51, 0.808);
+}
+
+.modal-thank-you-content {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-thank-you-content > * {
+  margin: 0.65em 0;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+
+.modal-box {
+  position: absolute;
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    font-size: 1.4em;
+  }
+}
