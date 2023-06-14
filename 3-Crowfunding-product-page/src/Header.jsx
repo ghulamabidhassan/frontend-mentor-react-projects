@@ -2,6 +2,7 @@ import { useState } from "react";
 import logodesktop from "../public/logo.svg";
 import { FaBookmark } from "react-icons/fa";
 import BackProject from "./BackProject";
+import masterLogo from "../public/logo-mastercraft.svg";
 
 const Header = () => {
   const [bookmark, setBookmark] = useState(false);
@@ -25,11 +26,7 @@ const Header = () => {
         </div>
       </div>
       <div className="overlay-box">
-        <img
-          className="master-logo"
-          src="../public/logo-mastercraft.svg"
-          alt=""
-        />
+        <img className="master-logo" src={masterLogo} alt="" />
         <h4 className="heading">mastercraft bamboo monitor riser</h4>
         <p className="desc secondary">
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
