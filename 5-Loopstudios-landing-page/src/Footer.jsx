@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-content">
         <section className="footer-one">
           <div>
-            <img src="../src/images/logo.svg" alt="" className="footer-logo" />
+            <img src="./images/logo.svg" alt="" className="footer-logo" />
           </div>
           <div>
             <ul className="menus">

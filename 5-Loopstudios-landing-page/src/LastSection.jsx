@@ -8,13 +8,13 @@ const LastSection = () => {
       <article className="last-center">
         <section className="card">
           <img
-            src="../src/images/mobile/image-deep-earth.jpg"
+            src=".images/mobile/image-deep-earth.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-deep-earth.jpg"
+            src="./images/desktop/image-deep-earth.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -22,13 +22,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-night-arcade.jpg"
+            src="./images/mobile/image-night-arcade.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-night-arcade.jpg"
+            src="./images/desktop/image-night-arcade.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -36,13 +36,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-soccer-team.jpg"
+            src="./images/mobile/image-soccer-team.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-soccer-team.jpg"
+            src="./images/desktop/image-soccer-team.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -50,13 +50,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-grid.jpg"
+            src="./images/mobile/image-grid.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-grid.jpg"
+            src="./images/desktop/image-grid.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -64,13 +64,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-from-above.jpg"
+            src="./images/mobile/image-from-above.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-from-above.jpg"
+            src="./images/desktop/image-from-above.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -78,13 +78,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-pocket-borealis.jpg"
+            src="./images/mobile/image-pocket-borealis.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-pocket-borealis.jpg"
+            src="./images/desktop/image-pocket-borealis.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -92,13 +92,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-curiosity.jpg"
+            src="./images/mobile/image-curiosity.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-curiosity.jpg"
+            src="./images/desktop/image-curiosity.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -106,13 +106,13 @@ const LastSection = () => {
         </section>
         <section className="card">
           <img
-            src="../src/images/mobile/image-fisheye.jpg"
+            src="./images/mobile/image-fisheye.jpg"
             alt=""
             className="card-img-mobile"
           />
 
           <img
-            src="../src/images/desktop/image-fisheye.jpg"
+            src="./images/desktop/image-fisheye.jpg"
             alt=""
             className="card-img-desktop"
           />
@@ -120,7 +120,7 @@ const LastSection = () => {
         </section>
       </article>
       <article className="last-last">
-        <button className="btn  btn-mobile">see all</button>
+        <button className="btn see-all btn-mobile">see all</button>
       </article>
     </div>
   );

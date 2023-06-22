@@ -35,7 +35,7 @@ const Header = () => {
       </div>
       <div className={`${open ? "overlay-menus" : "close"}`}>
         <section className="section-one">
-          <img src="../public/logo.svg" alt="" className="logo-overlay" />
+          <img src={logo} alt="" className="logo-overlay" />
           <FaWindowClose
             onClick={() => {
               setOpen(!open);
