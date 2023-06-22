@@ -8,7 +8,7 @@ const LastSection = () => {
       <article className="last-center">
         <section className="card">
           <img
-            src=".images/mobile/image-deep-earth.jpg"
+            src="./images/mobile/image-deep-earth.jpg"
             alt=""
             className="card-img-mobile"
           />
