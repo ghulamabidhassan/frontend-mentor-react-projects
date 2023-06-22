@@ -1,5 +1,6 @@
 import { FaBars, FaWindowClose } from "react-icons/fa";
 import { useGlobalContext } from "./Context";
+import logo from "../src/images/logo.svg";
 
 const Header = () => {
   const { open, setOpen } = useGlobalContext();
@@ -7,7 +8,7 @@ const Header = () => {
     <div className="header">
       <nav className="navbar">
         <div className="logo-section">
-          <img src="../public/logo.svg" alt="" className="logo" />
+          <img src={logo} alt="" className="logo" />
         </div>
         <div className="menu-div">
           <div className="bars">

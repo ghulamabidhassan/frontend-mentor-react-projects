@@ -3,12 +3,12 @@ const Middle = () => {
     <div className="middle">
       <article className="middle-one">
         <img
-          src="../src/images/mobile/image-interactive.jpg"
+          src="./images/mobile/image-interactive.jpg"
           alt=""
           className="mobile-inter"
         />
         <img
-          src="../src/images/desktop/image-interactive.jpg"
+          src="./images/desktop/image-interactive.jpg"
           alt=""
           className="desktop-inter"
         />
