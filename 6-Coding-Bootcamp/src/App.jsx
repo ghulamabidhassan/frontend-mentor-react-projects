@@ -6,12 +6,12 @@ function App() {
   const [index, setIndex] = useState(0);
   const [data, setData] = useState([
     {
-      img: "../public/images/image-tanya.jpg",
+      img: "/6-Coding-Bootcamp/public/images/image-tanya.jpg",
       name: "Tanya Sinclair",
       title: "UX Engineer",
     },
     {
-      img: "../public/images/image-john.jpg",
+      img: "/6-Coding-Bootcamp/public/images/image-john.jpg",
       name: "John Tarkpor",
       title: "Junior front-end developer",
     },
