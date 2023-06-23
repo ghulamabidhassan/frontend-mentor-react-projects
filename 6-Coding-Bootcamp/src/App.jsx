@@ -31,7 +31,7 @@ function App() {
     <div className="main">
       <div className="container">
         <section className="section-one">
-          <img src="../public/pattern-bg.svg" alt="" className="bg-pattern" />
+          <img src="./../public/pattern-bg.svg" alt="" className="bg-pattern" />
 
           <div className="box">
             <img src={data[index].img} alt="" className="avatar" />
