@@ -31,11 +31,7 @@ function App() {
     <div className="main">
       <div className="container">
         <section className="section-one">
-          <img
-            src="../src/assets/pattern-bg.svg"
-            alt=""
-            className="bg-pattern"
-          />
+          <img src="../public/pattern-bg.svg" alt="" className="bg-pattern" />
 
           <div className="box">
             <img src={data[index].img} alt="" className="avatar" />
@@ -46,11 +42,7 @@ function App() {
           </div>
         </section>
         <section className="section-two">
-          <img
-            src="../src/assets/pattern-quotes.svg"
-            alt=""
-            className="quotes"
-          />
+          <img src="../public/pattern-quotes.svg" alt="" className="quotes" />
           <div className="content">
             <p className="desc">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
@@ -66,11 +58,7 @@ function App() {
         </section>
       </div>
       <div className="overlays">
-        <img
-          src="../public/images/pattern-curve.svg"
-          alt=""
-          className="curve"
-        />
+        <img src="../public/pattern-curve.svg" alt="" className="curve" />
       </div>
     </div>
   );

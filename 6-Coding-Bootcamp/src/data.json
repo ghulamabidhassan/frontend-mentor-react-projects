@@ -1,11 +1,11 @@
 [
   {
-    "img": "../src/assets/image-tanya.jpg",
+    "img": "../public/image-tanya.jpg",
     "name": "Tanya Sinclair",
     "title": "UX Engineer"
   },
   {
-    "img": "../src/assets/image-john.jpg",
+    "img": "../public/image-john.jpg",
     "name": "John Tarkpor",
     "title": "Junior front-end developer"
   }
