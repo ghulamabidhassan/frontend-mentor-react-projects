@@ -1,6 +1,6 @@
 [
   {
-    "img": "../../6-Coding-Bootcamp/public/images/image-tanya.jpg",
+    "img": "../public/images/image-tanya.jpg",
     "name": "Tanya Sinclair",
     "title": "UX Engineer"
   },
