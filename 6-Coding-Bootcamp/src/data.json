@@ -1,11 +1,11 @@
 [
   {
-    "img": "../src/assets/image-tanya.jpg",
+    "img": "https://raw.githubusercontent.com/ghulamabidhassan/frontend-mentor-react-projects/master/6-Coding-Bootcamp/src/assets/image-tanya.jpg",
     "name": "Tanya Sinclair",
     "title": "UX Engineer"
   },
   {
-    "img": "../src/assets/image-john.jpg",
+    "img": "https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/6-Coding-Bootcamp/src/assets/image-john.jpg?raw=true",
     "name": "John Tarkpor",
     "title": "Junior front-end developer"
   }
