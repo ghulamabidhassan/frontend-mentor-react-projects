@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import raw from "./data.json";
+import quotes from "./assets/pattern-quotes.svg";
+import bg from "./assets/pattern-bg.svg";
+import curve from "./assets/pattern-curve.svg";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -31,12 +34,7 @@ function App() {
     <div className="main">
       <div className="container">
         <section className="section-one">
-          <img
-            loading="lazy"
-            src="../src/assets/pattern-bg.svg"
-            alt=""
-            className="bg-pattern"
-          />
+          <img loading="lazy" src={bg} alt="" className="bg-pattern" />
 
           <div className="box">
             <img
@@ -52,12 +50,7 @@ function App() {
           </div>
         </section>
         <section className="section-two">
-          <img
-            loading="lazy"
-            src="../src/assets/pattern-quotes.svg"
-            alt=""
-            className="quotes"
-          />
+          <img loading="lazy" src={quotes} alt="" className="quotes" />
           <div className="content">
             <p className="desc">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
@@ -73,12 +66,7 @@ function App() {
         </section>
       </div>
       <div className="overlays">
-        <img
-          loading="lazy"
-          src="../src/assets/pattern-quotes.svg"
-          alt=""
-          className="curve"
-        />
+        <img loading="lazy" src={curve} alt="" className="curve" />
       </div>
     </div>
   );
