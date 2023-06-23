@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import raw from "./data.json";
-// import patternbg from "./../public/images/pattern-bg.svg";
 
 function App() {
   const [index, setIndex] = useState(0);
