@@ -11,7 +11,7 @@ function App() {
       title: "UX Engineer",
     },
     {
-      img: "../src/image-john.jpg",
+      img: "../public/images/image-john.jpg",
       name: "John Tarkpor",
       title: "Junior front-end developer",
     },
