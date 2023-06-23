@@ -32,13 +32,19 @@ function App() {
       <div className="container">
         <section className="section-one">
           <img
+            loading="lazy"
             src="../src/assets/pattern-bg.svg"
             alt=""
             className="bg-pattern"
           />
 
           <div className="box">
-            <img src={data[index].img} alt="" className="avatar" />
+            <img
+              loading="lazy"
+              src={data[index].img}
+              alt=""
+              className="avatar"
+            />
             <div className="arrows">
               <FaAngleLeft onClick={prev} className="arrow" />
               <FaAngleRight onClick={next} className="arrow" />
@@ -47,6 +53,7 @@ function App() {
         </section>
         <section className="section-two">
           <img
+            loading="lazy"
             src="../src/assets/pattern-quotes.svg"
             alt=""
             className="quotes"
@@ -66,7 +73,12 @@ function App() {
         </section>
       </div>
       <div className="overlays">
-        <img src="../src/assets/pattern-quotes.svg" alt="" className="curve" />
+        <img
+          loading="lazy"
+          src="../src/assets/pattern-quotes.svg"
+          alt=""
+          className="curve"
+        />
       </div>
     </div>
   );
