@@ -1,21 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import raw from "./data.json";
 
 function App() {
   const [index, setIndex] = useState(0);
-  const [data, setData] = useState([
-    {
-      img: "../public/images/image-tanya.jpg",
-      name: "Tanya Sinclair",
-      title: "UX Engineer",
-    },
-    {
-      img: "../public/images/image-john.jpg",
-      name: "John Tarkpor",
-      title: "Junior front-end developer",
-    },
-  ]);
+  const [data, setData] = useState(raw);
 
   const next = () => {
     setIndex((index) => {
