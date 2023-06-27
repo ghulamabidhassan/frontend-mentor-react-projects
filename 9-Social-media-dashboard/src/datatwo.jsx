@@ -1,0 +1,85 @@
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagram,
+  FaYoutube,
+  FaAngleUp,
+} from "react-icons/fa";
+
+const datatwo = [
+  {
+    id: 1,
+    views: "page views",
+    count: 87,
+    icon: <FaFacebookSquare className="social facebook" />,
+    today: 3,
+    color: "green",
+    direction: "up",
+  },
+  {
+    id: 2,
+    views: "likes",
+    count: 52,
+    icon: <FaFacebookSquare className="social facebook" />,
+    today: 2,
+    color: "red",
+    direction: "down",
+  },
+  {
+    id: 3,
+    views: "likes",
+    count: 5462,
+    icon: <FaInstagram className="social insta" />,
+    today: 2257,
+    color: "green",
+    direction: "up",
+  },
+  {
+    id: 4,
+    views: "profile views",
+    count: "52k",
+    icon: <FaInstagram className="social insta" />,
+    today: 1375,
+    color: "green",
+    direction: "up",
+  },
+  {
+    id: 5,
+    views: "retweets",
+    count: 117,
+    icon: <FaTwitterSquare className="social twitter" />,
+    today: 303,
+    color: "green",
+    direction: "up",
+  },
+
+  {
+    id: 6,
+    views: "likes",
+    count: 507,
+    icon: <FaTwitterSquare className="social twitter" />,
+    today: 553,
+    color: "green",
+    direction: "up",
+  },
+  {
+    id: 7,
+    views: "likes",
+    count: 107,
+    icon: <FaYoutube className="social youtube" />,
+    today: 19,
+    color: "red",
+    direction: "down",
+  },
+  {
+    id: 8,
+    views: "total views",
+    count: 1407,
+    icon: <FaYoutube className="social youtube" />,
+    today: 12,
+    color: "red",
+    direction: "down",
+  },
+];
+
+export default datatwo;
