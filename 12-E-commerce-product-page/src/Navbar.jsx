@@ -7,7 +7,11 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-div-one">
-        <img src="../src/images/logo.svg" alt="" className="logo" />
+        <img
+          src="https://raw.githubusercontent.com/ghulamabidhassan/frontend-mentor-react-projects/f58ce910ecea5b4a88e5d70c4b1622deeb85d583/12-E-commerce-product-page/src/images/logo.svg"
+          alt=""
+          className="logo"
+        />
         <ul className="menus">
           <li className="menu">collections</li>
           <li className="menu">men</li>
