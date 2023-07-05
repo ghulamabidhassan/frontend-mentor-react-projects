@@ -1,0 +1,300 @@
+:root {
+  --Moderate-blue: hsl(238, 40%, 52%);
+  --Soft-Red: hsl(358, 79%, 66%);
+  --Light-grayish-blue: hsl(239, 57%, 85%);
+  --Pale-red: hsl(357, 100%, 86%);
+
+  /* ### Neutral */
+
+  --Dark-blue: hsl(212, 24%, 26%);
+  --Grayish-Blue: hsl(211, 10%, 45%);
+  --Light-gray: hsl(223, 19%, 93%);
+  --Very-light-gray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--Very-light-gray);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 50%;
+  margin: 3em 0;
+  height: auto;
+  /* background-color: blue; */
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35em;
+}
+
+.card {
+  padding: 1.35em;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  gap: 1.25em;
+}
+
+.card-div-one {
+  background-color: var(--Very-light-gray);
+  font-size: 0.85em;
+  height: 100%;
+  width: fit-content;
+  padding: 0.5em 0.65em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.card-div-one > * {
+  margin: 0.5em;
+}
+
+.number {
+  color: var(--Moderate-blue);
+  font-size: 1.1em;
+}
+
+:is(.plus, .minus) {
+  font-weight: bolder;
+  color: var(--Grayish-Blue);
+  cursor: pointer;
+}
+
+.avatar {
+  height: 2em;
+}
+
+.card-div-two {
+  width: 100%;
+}
+
+.card-div-two-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blue; */
+  font-size: 0.9em;
+}
+
+.name {
+  color: var(--Dark-blue);
+}
+
+.name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex > * {
+  margin-left: 0.65em;
+}
+
+.month {
+  /* color: aqua; */
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.you {
+  padding: 0.15em 0.75em;
+  background-color: var(--Moderate-blue);
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.reply,
+.reply-icon {
+  text-transform: capitalize;
+  color: var(--Moderate-blue);
+  cursor: pointer;
+  /* pointer-events: none; */
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+.card-div-two-two {
+  padding: 0.65em;
+  line-height: 1.45em;
+  color: var(--Grayish-Blue);
+  font-size: 0.93em;
+}
+
+.replies {
+  width: 100%;
+  margin: 1.35em 0;
+  /* background-color: blue; */
+  padding-left: 2.5em;
+}
+
+.reply-box:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.replies > div {
+  border-left: 1.5px solid var(--Light-grayish-blue);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.replies > div > div {
+  padding: 1.35em 0;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+b {
+  color: var(--Moderate-blue);
+}
+
+.delete,
+.edit {
+  text-transform: capitalize;
+}
+
+.delete,
+.delete-icon {
+  color: var(--Soft-Red);
+}
+
+.edit-icon {
+  margin-left: 1em;
+}
+
+.edit,
+.edit-icon {
+  color: var(--Moderate-blue);
+}
+
+:is(.reply, .edit, b):hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+:is(.icons, .delete):hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+footer {
+  padding: 1.35em;
+  background-color: white;
+  border-radius: 0.5em;
+  display: flex;
+}
+
+input {
+  width: 100%;
+  margin: 0 0.8em;
+  height: auto;
+  padding: 1em 0 5em 1em;
+  border: 1px solid var(--Grayish-Blue);
+}
+
+input:focus {
+  border: 1px solid transparent;
+  outline: 0.5px solid var(--Grayish-Blue);
+}
+
+.btn {
+  background-color: var(--Moderate-blue);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.8em 1.75em;
+  border-radius: 0.5em;
+  border: none;
+  height: fit-content;
+  transition: 400ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--Moderate-blue);
+  outline: 1.5px solid var(--Moderate-blue);
+}
+
+dialog {
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  padding: 1.5em 2em;
+  border-radius: 0.5em;
+  text-align: left;
+}
+
+.dialog > * {
+  margin: 0.75em 0;
+}
+
+.desc {
+  line-height: 1.45em;
+  color: var(--Grayish-Blue);
+  font-size: 1em;
+}
+
+.delete-com {
+  font-size: 1.25em;
+  color: var(--Dark-blue);
+  text-transform: capitalize;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.btn-flex > .btn {
+  width: 100%;
+}
+
+.btn-delete {
+  background-color: var(--Soft-Red);
+  color: white;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  color: var(--Soft-Red);
+  background-color: white;
+  outline: 1px solid var(--Soft-Red);
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    font-size: 1.4em;
+  }
+}
