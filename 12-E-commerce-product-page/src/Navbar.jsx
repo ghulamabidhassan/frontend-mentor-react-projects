@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="cart-box-one">
                   <span>
                     <img
-                      src="./dist/src/images/image-product-1.jpg"
+                      src="https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-1.jpg?raw=true"
                       alt=""
                       className="cart-item-logo"
                     />
@@ -70,7 +70,11 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <img src="../src/images/image-avatar.png" alt="" className="avatar" />
+        <img
+          src="https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-avatar.png?raw=true"
+          alt=""
+          className="avatar"
+        />
       </div>
     </div>
   );
