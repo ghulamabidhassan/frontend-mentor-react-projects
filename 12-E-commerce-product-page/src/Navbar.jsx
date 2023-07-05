@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="cart-box-one">
                   <span>
                     <img
-                      src="../src/images/image-product-1.jpg"
+                      src="../dist/src/images/image-product-1.jpg"
                       alt=""
                       className="cart-item-logo"
                     />
