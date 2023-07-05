@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar";
 import Sections from "./Sections";
-import { AppProvider } from "./Context";
 
 function App() {
   return (
