@@ -44,12 +44,12 @@ function App() {
       </footer>
 
       <img
-        src="../src/images/bg-stars.svg"
+        src="https://res.cloudinary.com/dzci9azc2/image/upload/v1688660375/countdown%20timer/bg-stars_tanvqg.svg"
         alt=""
         className="stars overlay-img"
       />
       <img
-        src="../src/images/pattern-hills.svg"
+        src="https://res.cloudinary.com/dzci9azc2/image/upload/v1688660375/countdown%20timer/pattern-hills_bq5w7w.svg"
         alt=""
         className="hills overlay-img"
       />
