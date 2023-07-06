@@ -1,9 +1,9 @@
-const Timer = () => {
+const Timer = ({ days, hours, minutes, seconds }) => {
   return (
     <div className="timer">
       <div className="box">
         <div className="box-cont">
-          <h2 className="num days">08</h2>
+          <h2 className="num days">{days}</h2>
           <span className="overlay-box left"></span>
           <span className="overlay-box right"></span>
           <span className="overlay-box line"></span>
@@ -12,7 +12,7 @@ const Timer = () => {
       </div>
       <div className="box">
         <div className="box-cont">
-          <h2 className="num days">08</h2>
+          <h2 className="num days">{hours}</h2>
           <span className="overlay-box left"></span>
           <span className="overlay-box right"></span>
           <span className="overlay-box line"></span>
@@ -21,7 +21,7 @@ const Timer = () => {
       </div>
       <div className="box">
         <div className="box-cont">
-          <h2 className="num days">08</h2>
+          <h2 className="num days">{minutes}</h2>
           <span className="overlay-box left"></span>
           <span className="overlay-box right"></span>
           <span className="overlay-box line"></span>
@@ -30,7 +30,7 @@ const Timer = () => {
       </div>
       <div className="box">
         <div className="box-cont">
-          <h2 className="num days">08</h2>
+          <h2 className="num days">{seconds}</h2>
           <span className="overlay-box left"></span>
           <span className="overlay-box right"></span>
           <span className="overlay-box line"></span>

@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-div-one">
         <img
-          src="https://raw.githubusercontent.com/ghulamabidhassan/frontend-mentor-react-projects/f58ce910ecea5b4a88e5d70c4b1622deeb85d583/12-E-commerce-product-page/src/images/logo.svg"
+          src="https://res.cloudinary.com/dzci9azc2/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1688655495/ecommerce%20product%20page/logo_oq7fd8.jpg?_s=public-apps"
           alt=""
           className="logo"
         />
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="cart-box-one">
                   <span>
                     <img
-                      src="https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-1.jpg?raw=true"
+                      src="https://res.cloudinary.com/dzci9azc2/image/upload/v1688655494/ecommerce%20product%20page/image-product-1_zzwn9q.jpg"
                       alt=""
                       className="cart-item-logo"
                     />

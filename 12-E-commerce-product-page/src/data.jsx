@@ -1,19 +1,19 @@
 const data = [
   {
     id: 1,
-    img: "https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-1.jpg?raw=true",
+    img: "https://res.cloudinary.com/dzci9azc2/image/upload/v1688655494/ecommerce%20product%20page/image-product-1_zzwn9q.jpg",
   },
   {
     id: 2,
-    img: "https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-2.jpg?raw=true",
+    img: "https://res.cloudinary.com/dzci9azc2/image/upload/v1688655494/ecommerce%20product%20page/image-product-2_g2pqpq.jpg",
   },
   {
     id: 3,
-    img: "https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-3.jpg?raw=true",
+    img: "https://res.cloudinary.com/dzci9azc2/image/upload/v1688655494/ecommerce%20product%20page/image-product-3_ewrav4.jpg",
   },
   {
     id: 4,
-    img: "https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-product-4.jpg?raw=true",
+    img: "https://res.cloudinary.com/dzci9azc2/image/upload/v1688655495/ecommerce%20product%20page/image-product-4_geod5x.jpg",
   },
 ];
 
