@@ -9,33 +9,32 @@ function App() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  let countDown = new Date("July 6, 2023 24:00:00").getTime();
-  let now = new Date().getTime();
-  let diff = countDown - now;
+  useEffect(() => {
+    const timer = setInterval(() => {
+      let countDown = new Date("DEC 31, 2023 24:00:00").getTime();
+      let now = new Date().getTime();
+      let diff = countDown - now;
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  //     let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //     let mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  //     let secs = Math.floor((diff % (1000 * 60)) / 1000);
-  //     setDays(days);
-  //     setHours(hours);
-  //     setMinutes(mins);
-  //     setSeconds(secs);
-  //   }, 1000);
+      // let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      // let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      // let mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      // let secs = Math.floor((diff % (1000 * 60)) / 1000);
+      setDays(Math.floor(diff / (1000 * 60 * 60 * 24)));
+      setHours(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      setMinutes(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
+      setSeconds(Math.floor((diff % (1000 * 60)) / 1000));
+    }, 1000);
+    return;
+  }, []);
 
-  //   return;
-  // }, []);
-
-  console.log(days, hours, minutes, seconds);
+  // console.log(days);
 
   return (
     <div className="main">
       <div className="container">
         <div className="cont-items">
-          <h2 className="heading">we're launching soon</h2>
-          <Timer values={{ days, hours, minutes, seconds }} />
+          <h2 className="heading">NEW YEAR COUNTDOWN -- 2024 -- </h2>
+          <Timer time={{ days, hours, minutes, seconds }} />
         </div>
       </div>
       <footer>
