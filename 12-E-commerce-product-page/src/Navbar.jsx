@@ -75,7 +75,7 @@ const Navbar = () => {
           </div>
         </div>
         <img
-          src="https://github.com/ghulamabidhassan/frontend-mentor-react-projects/blob/master/12-E-commerce-product-page/src/images/image-avatar.png?raw=true"
+          src="https://res.cloudinary.com/dzci9azc2/image/upload/v1688655493/ecommerce%20product%20page/image-avatar_xzxf12.png"
           alt=""
           className="avatar"
         />
