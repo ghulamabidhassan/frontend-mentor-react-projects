@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "./src/images/photosnap.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699149/jobs%20listing%20with%20filter/klkjxlh8uebtjqwi5nut.svg",
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "company": "Manage",
-    "logo": "./src/images/manage.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699149/jobs%20listing%20with%20filter/kbahdgk85npk7kwgofzr.svg",
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "company": "Account",
-    "logo": "./src/images/account.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699147/jobs%20listing%20with%20filter/pwgss5icvdtaacsy6vbn.svg",
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "./src/images/myhome.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699147/jobs%20listing%20with%20filter/mwzkd0zpxumnp6dcfaaj.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "./src/images/loop-studios.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699147/jobs%20listing%20with%20filter/yisf3qvbrstssluhi0sp.svg",
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "company": "FaceIt",
-    "logo": "./src/images/faceit.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699148/jobs%20listing%20with%20filter/drruqxezai9cvdthzqqc.svg",
     "new": false,
     "featured": false,
     "position": "Junior Backend Developer",
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "./src/images/shortly.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699148/jobs%20listing%20with%20filter/rnwd1dlzebkncz8gqlle.svg",
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "company": "Insure",
-    "logo": "./src/images/insure.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699553/jobs%20listing%20with%20filter/8_-_insure_j2bjrp.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -122,7 +122,7 @@
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "./src/images/eyecam-co.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699148/jobs%20listing%20with%20filter/xnvlgyhblk6bsfrdgfog.svg",
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "./src/images/the-air-filter-company.svg",
+    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699149/jobs%20listing%20with%20filter/bmwqio7bxekpjggrvyc0.svg",
     "new": false,
     "featured": false,
     "position": "Front-end Dev",

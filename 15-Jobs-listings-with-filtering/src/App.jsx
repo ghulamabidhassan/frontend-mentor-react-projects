@@ -4,7 +4,6 @@ import "./App.css";
 import raw from "../data.json";
 import bgMobile from "./images/bg-header-mobile.svg";
 import bgDesktop from "./images/bg-header-desktop.svg";
-import avatar from "./images/eyecam-co.svg";
 
 function App() {
   const [data, setData] = useState(raw);
