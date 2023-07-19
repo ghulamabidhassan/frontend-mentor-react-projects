@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "https://res.cloudinary.com/dzci9azc2/image/upload/v1689699149/jobs%20listing%20with%20filter/klkjxlh8uebtjqwi5nut.svg",
+    "logo": "./public/1 - photosnap.svg",
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -11,7 +11,7 @@
     "postedAt": "1d ago",
     "contract": "Full Time",
     "location": "USA Only",
-    "languages": ["HTML", "CSS", "JavaScript"],
+    "languages": ["Frontend", "Senior", "HTML", "CSS", "JavaScript"],
     "tools": []
   },
   {
@@ -26,7 +26,7 @@
     "postedAt": "1d ago",
     "contract": "Part Time",
     "location": "Remote",
-    "languages": ["Python"],
+    "languages": ["Fullstack", "Midweight", "Python", "React"],
     "tools": ["React"]
   },
   {
@@ -41,7 +41,7 @@
     "postedAt": "2d ago",
     "contract": "Part Time",
     "location": "USA Only",
-    "languages": ["JavaScript"],
+    "languages": ["Frontend", "Junior", "JavaScript", "React", "Sass"],
     "tools": ["React", "Sass"]
   },
   {
@@ -56,7 +56,7 @@
     "postedAt": "5d ago",
     "contract": "Contract",
     "location": "USA Only",
-    "languages": ["CSS", "JavaScript"],
+    "languages": ["Frontend", "Junior", "CSS", "JavaScript"],
     "tools": []
   },
   {
@@ -71,7 +71,7 @@
     "postedAt": "1w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "languages": ["JavaScript"],
+    "languages": ["Fullstack", "Midweight", "JavaScript", "Ruby", "Sass"],
     "tools": ["Ruby", "Sass"]
   },
   {
@@ -86,7 +86,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "UK Only",
-    "languages": ["Ruby"],
+    "languages": ["Backend", "Junior", "Ruby", "RoR"],
     "tools": ["RoR"]
   },
   {
@@ -101,7 +101,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "languages": ["HTML", "JavaScript"],
+    "languages": ["Frontend", "Junior", "HTML", "JavaScript", "Sass"],
     "tools": ["Sass"]
   },
   {
@@ -116,7 +116,7 @@
     "postedAt": "2w ago",
     "contract": "Full Time",
     "location": "USA Only",
-    "languages": ["JavaScript"],
+    "languages": ["Frontend", "Junior", "JavaScript", "Vue", "Sass"],
     "tools": ["Vue", "Sass"]
   },
   {
@@ -131,7 +131,7 @@
     "postedAt": "3w ago",
     "contract": "Full Time",
     "location": "Worldwide",
-    "languages": ["JavaScript", "Python"],
+    "languages": ["Fullstack", "Midweight", "JavaScript", "Python", "Django"],
     "tools": ["Django"]
   },
   {
@@ -146,7 +146,7 @@
     "postedAt": "1mo ago",
     "contract": "Part Time",
     "location": "Worldwide",
-    "languages": ["JavaScript"],
+    "languages": ["Frontend", "Junior", "JavaScript", "React", "Sass"],
     "tools": ["React", "Sass"]
   }
 ]

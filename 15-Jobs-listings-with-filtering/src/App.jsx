@@ -8,6 +8,7 @@ import bgDesktop from "./images/bg-header-desktop.svg";
 function App() {
   const [data, setData] = useState(raw);
   const [catagories, setCatagories] = useState([]);
+  const [filteredItems, setFilteredItems] = useState(data);
 
   const updateCatagories = (e) => {
     const currentCat = e.currentTarget.dataset.id;
@@ -17,6 +18,23 @@ function App() {
       setCatagories((oldcat) => {
         return [...oldcat, currentCat];
       });
+    }
+  };
+
+  useEffect(() => {
+    filterItems();
+  }, [catagories]);
+
+  const filterItems = () => {
+    if (catagories.length > 0) {
+      const tempItems = data.filter((item) => {
+        return catagories.every((elem) => {
+          return item.languages.includes(elem);
+        });
+      });
+      setFilteredItems(tempItems);
+    } else {
+      setFilteredItems(data);
     }
   };
 
@@ -72,7 +90,7 @@ function App() {
           </div>
         </header>
         <section className="job-listings">
-          {data.map((item, index) => {
+          {filteredItems.map((item, index) => {
             const {
               id,
               company,
@@ -89,7 +107,7 @@ function App() {
               tools,
             } = item;
 
-            const allCatagories = [role, level, languages, tools].flat();
+            const allCatagories = languages;
 
             return (
               <article key={id} className="job">
