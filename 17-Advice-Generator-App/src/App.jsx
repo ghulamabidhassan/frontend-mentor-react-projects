@@ -27,7 +27,7 @@ function App() {
             <h3 className="advice">advice # {data.slip.id}</h3>
             <div className="content">{data.slip.advice}</div>
             <img
-              src="../src/assets/images/pattern-divider-mobile.svg"
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690136696/advice%20generator/pattern-divider-desktop_zs40pd.svg"
               alt=""
               className="img-line"
             />
@@ -39,7 +39,7 @@ function App() {
             >
               <div>
                 <img
-                  src="../src/assets/images/icon-dice.svg"
+                  src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690136695/advice%20generator/icon-dice_s4va8f.svg"
                   alt=""
                   className="dice-img"
                 />
