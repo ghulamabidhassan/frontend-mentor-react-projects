@@ -132,7 +132,7 @@ function App() {
               onClick={() => {
                 setMoon(!moon);
               }}
-              src="../src/images/icon-moon.svg"
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132073/todo%20app/icon-moon_kx7ktv.svg"
               alt=""
               className="moon"
             />
@@ -141,7 +141,7 @@ function App() {
               onClick={() => {
                 setMoon(!moon);
               }}
-              src="../src/images/icon-sun.svg"
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132073/todo%20app/icon-sun_tr3x1r.svg"
               alt=""
               className="sun"
             />
