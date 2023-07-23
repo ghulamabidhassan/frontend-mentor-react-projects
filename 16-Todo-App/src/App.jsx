@@ -99,12 +99,12 @@ function App() {
       {moon ? (
         <>
           <img
-            src="../src/images/bg-desktop-dark.jpg"
+            src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132074/todo%20app/bg-desktop-dark_qvdbth.jpg"
             alt=""
             className="bg-desktop-dark bg-desktop"
           />
           <img
-            src="../src/images/bg-mobile-dark.jpg"
+            src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132074/todo%20app/bg-mobile-dark_huuk2u.jpg"
             alt=""
             className="bg-mobile-dark bg-mobile"
           />
@@ -112,12 +112,12 @@ function App() {
       ) : (
         <>
           <img
-            src="../src/images/bg-desktop-light.jpg"
+            src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132074/todo%20app/bg-desktop-light_rp2uym.jpg"
             alt=""
             className="bg-desktop-light bg-desktop"
           />
           <img
-            src="../src/images/bg-mobile-light.jpg"
+            src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132073/todo%20app/bg-mobile-light_axniqv.jpg"
             alt=""
             className="bg-mobile-light bg-mobile"
           />
@@ -185,7 +185,7 @@ function App() {
                     >
                       <div className="circle-box ">
                         <img
-                          src="../src/images/icon-check.svg"
+                          src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132073/todo%20app/icon-check_b764or.svg"
                           alt=""
                           className="check"
                         />
@@ -203,7 +203,7 @@ function App() {
                     onClick={() => {
                       deleteItem(item.id);
                     }}
-                    src="../src/images/icon-cross.svg"
+                    src="https://res.cloudinary.com/dzci9azc2/image/upload/v1690132073/todo%20app/icon-cross_hd2low.svg"
                     alt=""
                     className="clear"
                   />
