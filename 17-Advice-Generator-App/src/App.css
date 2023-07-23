@@ -1,0 +1,119 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #202632;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.container {
+  height: auto;
+  padding: 2.5em 2em;
+  background-color: #313a49;
+  border-radius: 0.85em;
+  text-align: center;
+  position: relative;
+}
+
+.container > * {
+  margin: 0.85em 0;
+}
+
+.advice {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.65em;
+  color: var(--Neon-Green);
+}
+
+.content {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.75em;
+  letter-spacing: 1px;
+  font-family: "Manrope", sans-serif;
+}
+
+.dice {
+  background-color: var(--Neon-Green);
+  height: auto;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10%;
+  transition: 200ms ease-in-out;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: hsl(150, 100%, 66%) 0px 5px 15px;
+}
+
+.dice > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  animation: blink 1000ms ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    font-size: 1.35em;
+  }
+
+  .container {
+    width: 38%;
+  }
+}

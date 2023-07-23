@@ -171,14 +171,12 @@ function App() {
           >
             {final.map((item, index) => {
               return (
-                <div key={index} className="list">
-                  <span
-                    className="span "
-                    onClick={() => {
-                      setComplete(item.id);
-                    }}
-                  >
+                <div draggable key={index} className="list">
+                  <span className="span ">
                     <div
+                      onClick={() => {
+                        setComplete(item.id);
+                      }}
                       className={`${
                         item.active ? "circle " : "circle circle-bg"
                       }`}
