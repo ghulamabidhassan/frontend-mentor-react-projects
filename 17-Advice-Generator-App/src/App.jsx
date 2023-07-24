@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [refersh, setRefresh] = useState(false);
   const url = "https://api.adviceslip.com/advice";
 
   const fetchUrl = async (url) => {
@@ -15,7 +16,7 @@ function App() {
 
   useEffect(() => {
     fetchUrl(url);
-  }, []);
+  }, [refersh]);
 
   return (
     <div className="main">
@@ -34,7 +35,7 @@ function App() {
             <div
               className="dice"
               onClick={() => {
-                window.location.reload();
+                setRefresh(!refersh);
               }}
             >
               <div>
