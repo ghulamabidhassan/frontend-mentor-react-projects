@@ -47,8 +47,6 @@ const AppProvider = ({ children }) => {
     }
   };
 
-  console.log(data);
-
   const setPlans = (e) => {
     const currentTarget = e.currentTarget;
     const elements = currentTarget.parentElement;

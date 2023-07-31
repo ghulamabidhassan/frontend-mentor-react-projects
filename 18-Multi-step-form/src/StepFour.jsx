@@ -5,7 +5,6 @@ const StepFour = () => {
   const { goBack, idx, setIdx, yearly, data } = useGlobalContext();
   const [servies, setServices] = useState(Object.entries(data.services));
 
-  console.log(servies);
   return (
     <div className="step-four">
       <h2 className="personal-info">Fininshing up</h2>
