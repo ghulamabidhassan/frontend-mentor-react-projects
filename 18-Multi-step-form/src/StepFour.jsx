@@ -32,7 +32,6 @@ const StepFour = () => {
         </div>
         <div>
           {servies.map((item, index) => {
-            console.log(item[1]);
             return (
               <article key={index} className="step-four-flex">
                 <h5>{item[0].toLocaleUpperCase().replace("-", " ")}</h5>
