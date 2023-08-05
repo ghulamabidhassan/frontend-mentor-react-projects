@@ -1,4 +1,5 @@
 import "./App.css";
+import dotenv from "dotenv";
 import mobile from "../public/pattern-bg-mobile.png";
 import desktop from "../public/pattern-bg-desktop.png";
 import { FaAngleRight } from "react-icons/fa";
@@ -8,20 +9,33 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [position, setPosition] = useState();
-  const [url, setUrl] = useState("http://ip-api.com/json/");
+  const [url, setUrl] = useState(
+    `https://geo.ipify.org/api/v2/country,city?apiKey=${
+      import.meta.env.VITE_API
+    }&ipAddress=`
+  );
   const [data, setData] = useState();
   const [input, setInput] = useState();
+
+  // console.log(import.meta.env.VITE_API);
+  // console.log(url);
 
   const fetchUrl = async (url) => {
     let response = await fetch(url);
     let data = await response.json();
     setData(data);
-    setPosition([data.lat, data.lon]);
+    setPosition([data.location.lat, data.location.lng]);
   };
+
+  // console.log(data);
 
   const inputSearch = (e) => {
     let value = e.currentTarget.value;
-    setInput(`http://ip-api.com/json/${value}`);
+    setInput(
+      `https://geo.ipify.org/api/v2/country,city?apiKey=${
+        import.meta.env.VITE_API
+      }&ipAddress=${value}`
+    );
   };
 
   const sendReq = () => {
@@ -59,33 +73,28 @@ function App() {
           <div className="detail-cont">
             <div className="box">
               <h4 className="box-title">ip address</h4>
-              <p className="details">{data ? data.query : "-"}</p>
+              <p className="details">{data ? data.ip : "-"}</p>
             </div>
             <div className="box">
               <h4 className="box-title">location</h4>
               <p className="details">
-                {data ? data.city + ", " + data.countryCode : "-"}
+                {data ? data.location.city + ", " + data.location.country : "-"}
               </p>
             </div>
             <div className="box">
               <h4 className="box-title">timezone</h4>
-              <p className="details">{data ? data.timezone : "-"}</p>
+              <p className="details">{data ? data.location.timezone : "-"}</p>
             </div>
             <div className="box">
               <h4 className="box-title">isp</h4>
-              <p className="details">{data ? data.org : "-"}</p>
+              <p className="details">{data ? data.as.name : "-"}</p>
             </div>
           </div>
         </div>
         <div className="bottom">
           <div className="map" id="map">
             {data ? (
-              <MapContainer
-                ref={map}
-                center={position}
-                zoom={2}
-                scrollWheelZoom={true}
-              >
+              <MapContainer center={position} zoom={2} scrollWheelZoom={true}>
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
