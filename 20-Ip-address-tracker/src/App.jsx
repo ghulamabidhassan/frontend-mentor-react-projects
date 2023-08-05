@@ -1,4 +1,6 @@
 import "./App.css";
+import mobile from "../public/pattern-bg-mobile.png";
+import desktop from "../public/pattern-bg-desktop.png";
 import { FaAngleRight } from "react-icons/fa";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -38,16 +40,8 @@ function App() {
     <div className="main">
       <div className="container">
         <div className="top">
-          <img
-            src="../src/assets/pattern-bg-mobile.png"
-            alt=""
-            className="bg-mobile"
-          />
-          <img
-            src="../src/assets/pattern-bg-desktop.png"
-            alt=""
-            className="bg-desktop"
-          />
+          <img src={mobile} alt="" className="bg-mobile" />
+          <img src={desktop} alt="" className="bg-desktop" />
           <div className="content">
             <h2 className="title">IP Address Tracker</h2>
             <div className="input-box">
