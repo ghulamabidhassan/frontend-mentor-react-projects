@@ -1,0 +1,271 @@
+.container {
+  width: 50%;
+  margin: auto;
+  padding-top: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 1em;
+  border: 2px solid rgb(151, 149, 149);
+  border-radius: 1em;
+}
+
+header > div > .logo {
+  height: 6em;
+}
+
+header > .div-two {
+  background-color: #fbfbfb;
+  text-align: center;
+  padding: 0.7em 3em;
+  border-radius: 0.5em;
+}
+
+.score {
+  color: blue;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.number {
+  font-size: 3em;
+  color: #565368;
+  font-weight: 700;
+}
+
+.game {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-template-areas:
+    "paper scissor"
+    "rock rock";
+  margin: 2em;
+  padding: 1em;
+  z-index: 0;
+}
+
+.game::before {
+  content: "";
+  scale: 0.8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  top: 13%;
+  background: url("../public/images/bg-triangle.svg") no-repeat;
+  z-index: 0;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 1em;
+  isolation: isolate;
+}
+
+.choice {
+  position: relative;
+  background: #fbfbfb;
+  display: grid;
+  place-items: center;
+  height: 10em;
+  width: 10em;
+  margin: 1em;
+  border-radius: 50%;
+  box-shadow: inset 0 0.5rem rgb(223, 220, 220);
+  /* z-index: 0; */
+}
+
+.choice::before {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 130%;
+  top: -15%;
+  left: -15%;
+  border-radius: 50%;
+  background: blue;
+  z-index: -1;
+}
+
+.paper {
+  grid-area: paper;
+}
+
+.paper::before {
+  box-shadow: 0 0.5rem rgba(27, 27, 27, 0.24);
+}
+
+.scissor {
+  grid-area: scissor;
+}
+
+.scissor::before {
+  background: rgba(241, 145, 1, 0.973);
+  box-shadow: 0 0.5rem rgba(27, 27, 27, 0.24);
+}
+
+.rock {
+  grid-area: rock;
+}
+
+.rock::before {
+  background: rgb(194, 39, 39);
+  box-shadow: 0 0.5rem rgba(27, 27, 27, 0.24);
+}
+
+footer {
+  position: absolute;
+  bottom: 5%;
+  right: 8%;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 2.5px solid rgb(148, 145, 145);
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(38, 38, 39, 0.815);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.overlay-cont {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 1.5em;
+  height: fit-content;
+  border-radius: 0.5em;
+}
+
+.overlay-cont > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.overlay-cont > div:nth-child(2) {
+  display: grid;
+  place-items: center;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+
+.step-two {
+  margin-top: 3.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pick {
+  margin: 1em 0;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.step-two-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.win {
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.black {
+  background-color: rgba(22, 22, 22, 0.219);
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: 50%;
+  margin-top: 1em;
+}
+
+.play {
+  padding: 0.75em 2em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 300ms ease-in-out;
+  margin: 1em 0;
+  background-color: #f9f9f9;
+  color: rgb(80, 71, 71);
+}
+
+.play:hover {
+  cursor: pointer;
+  color: rgb(209, 25, 25);
+  scale: 1.01;
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    font-size: 1.5em;
+  }
+
+  .container {
+    width: 55%;
+    padding-top: 3em;
+  }
+
+  .choice {
+    height: 11em;
+    width: 11em;
+  }
+
+  .black {
+    height: 7em;
+    width: 7em;
+  }
+
+  .game {
+    margin: 1.5em;
+    padding: 2.5em;
+  }
+
+  .game::before {
+    left: 35%;
+    top: 28%;
+    scale: 1;
+  }
+}
