@@ -1,4 +1,4 @@
-import { useGlobalContext } from "../Context";
+import { useGlobalContext } from "./Context";
 
 const Overlay = () => {
   const { open, setOpen } = useGlobalContext();
@@ -14,12 +14,15 @@ const Overlay = () => {
             }}
             className="close-icon"
           >
-            <img src="../../public/images/icon-close.svg" alt="" />
+            <img
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1691684641/rock%20paper%20scissor/icon-close_cyojzw.svg"
+              alt=""
+            />
           </span>
         </div>
         <div>
           <img
-            src="../../public/images/image-rules.svg"
+            src="https://res.cloudinary.com/dzci9azc2/image/upload/v1691684641/rock%20paper%20scissor/image-rules_vim13s.svg"
             alt=""
             className="img-rules"
           />

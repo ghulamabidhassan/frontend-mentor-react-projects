@@ -1,8 +1,6 @@
 import "./App.css";
 import { useGlobalContext } from "./Context";
-import StepOne from "./StepOne";
-import StepTwo from "./StepTwo";
-import Overlay from "./assets/Overlay";
+import Overlay from "./Overlay";
 import data from "./data";
 
 function App() {
@@ -13,7 +11,11 @@ function App() {
       <div className="container">
         <header className="header">
           <div>
-            <img src="../public/images/logo.svg" alt="" className="logo" />
+            <img
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1691684641/rock%20paper%20scissor/logo_qes1hs.svg"
+              alt=""
+              className="logo"
+            />
           </div>
           <div className="div-two">
             <h4 className="score">score</h4>

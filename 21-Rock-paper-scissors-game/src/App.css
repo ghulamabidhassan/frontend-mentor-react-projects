@@ -131,6 +131,10 @@ footer {
   border-radius: 0.5em;
 }
 
+.rules {
+  cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;

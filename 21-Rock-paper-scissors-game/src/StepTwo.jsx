@@ -1,56 +1,47 @@
 import { useGlobalContext } from "./Context";
+import Items from "./Items";
 
 const StepTwo = () => {
-  const { playAgain, win, score } = useGlobalContext();
+  const { playAgain, win, player, computer } = useGlobalContext();
   return (
     <div className="step-two">
       <div>
         <span>
           <h2 className="pick">you picked</h2>
         </span>
-        <button className="btn scissor">
-          <span className="choice scissor">
-            <img
-              src="../public/images/icon-scissors.svg"
-              alt=""
-              className="choice-img"
-            />
-          </span>
-        </button>
+        {player &&
+          Items.map((item) => {
+            if (item.id == player) {
+              return item.comp;
+            }
+          })}
       </div>
-      {win ? (
+
+      {computer && (
         <div className="step-two-middle ">
           <h2 className="win">
-            {win == 0
-              ? "Draw"
-              : win == 1
-              ? "you won"
-              : win < 0
-              ? "you lose"
-              : ""}
+            {win == "won" && "You won"}
+            {win == "draw" && "draw"}
+            {win == "lost" && "You lose"}
           </h2>
           <button onClick={playAgain} className="play">
             play again
           </button>
         </div>
-      ) : (
-        ""
       )}
+
       <div className="center">
         <span>
           <h2 className="pick">the house picked</h2>
         </span>
         <div>
-          <div className="black  "></div>
-          <button className="btn scissor  close ">
-            <span className="choice scissor">
-              <img
-                src="../public/images/icon-scissors.svg"
-                alt=""
-                className="choice-img"
-              />
-            </span>
-          </button>
+          <div className={`${computer ? "black close" : "black"}`}></div>
+          {computer &&
+            Items.map((item) => {
+              if (item.id == computer) {
+                return item.comp;
+              }
+            })}
         </div>
       </div>
     </div>
