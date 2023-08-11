@@ -15,6 +15,7 @@ const AppProvider = ({ children }) => {
     const choice = e.currentTarget.dataset.choice;
     setPlayer(choice);
     setIndex(1);
+
     setTimeout(() => {
       let randomNumber = Math.floor(Math.random() * items.length);
       setComputer(items[randomNumber]);
@@ -23,30 +24,41 @@ const AppProvider = ({ children }) => {
 
   const playAgain = () => {
     setComputer();
+    setPlayer();
     setIndex(0);
   };
 
   useEffect(() => {
     result();
-    return;
   }, [computer]);
 
   const result = () => {
-    if (
-      (player === "paper" && computer === "rock") ||
-      (player === "rock" && computer === "scissor") ||
-      (player === "scissor" && computer === "paper")
-    ) {
+    if (player == computer) {
+      setWin("draw");
+      return;
+    } else if (player === "paper" && computer === "rock") {
       setWin("won");
       setScore((old) => {
         return old + 1;
       });
-    } else if (player === computer) {
-      setWin("draw");
+    } else if (player === "rock" && computer === "scissor") {
+      setWin("won");
+      setScore((old) => {
+        return old + 1;
+      });
+    } else if (player === "scissor" && computer === "paper") {
+      setWin("won");
+      setScore((old) => {
+        return old + 1;
+      });
     } else {
       setWin("lost");
       setScore((old) => {
-        return old - 1;
+        if (old == 0) {
+          return 0;
+        } else {
+          return old - 1;
+        }
       });
     }
   };
