@@ -1,8 +1,20 @@
-# React + Vite
+# Rock, Paper, Scissors Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React implementation of the Rock, Paper, Scissors game. It is part of the Frontend Mentor challenges.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+
+Check out the live demo [here](https://rpsgame.abidhassan.dev/).
+
+## Features
+
+- Play Rock, Paper, Scissors against the computer.
+- Responsive design for various screen sizes.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ghulamabidhassan/frontend-mentor-react-projects.git
