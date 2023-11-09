@@ -2,6 +2,7 @@
 
 This project is a solution to the "Jobs Listings with Filtering" challenge from Frontend Mentor. It is built using React and implements a job listing page with the ability to filter jobs based on different criteria.
 
+[Live Demo Url](https://jobfilter.abidhassan.dev/)
 
 ## Features
 
@@ -15,5 +16,3 @@ To get started with this project, follow these steps:
 
 ```bash
 git clone https://github.com/ghulamabidhassan/frontend-mentor-react-projects.git
-
-[Live Demo Url](https://jobfilter.abidhassan.dev/)
